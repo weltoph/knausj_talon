@@ -7,7 +7,7 @@ def setup_default_alphabet():
     """set up common default alphabet.
 
     no need to modify this here, change your alphabet using alphabet.csv"""
-    initial_default_alphabet = "air bat cap drum each fine gust harp sit jury crunch look made near odd pit quench red sun trap urge vest whale plex yank zip".split(
+    initial_default_alphabet = "ape bat cap drum each fine gust harp sit jury kick look made near odd pit quench red sun tool urge vest whale plex yank zip".split(
         " "
     )
     initial_letters_string = "abcdefghijklmnopqrstuvwxyz"
@@ -178,7 +178,7 @@ symbol_key_words = {
     "L square": "[",
     "left square": "[",
     "square": "[",
-    "R square": "]",
+    #"R square": "]",
     "right square": "]",
     "slash": "/",
     "backslash": "\\",
@@ -193,23 +193,24 @@ symbol_key_words = {
     "paren": "(",
     "L paren": "(",
     "left paren": "(",
-    "R paren": ")",
+    #"R paren": ")",
     "right paren": ")",
+    "shift paren": ")",
     "brace": "{",
     "left brace": "{",
     "brack": "{",
     "bracket": "{",
     "left bracket": "{",
-    "r brace": "}",
+    #"r brace": "}",
     "right brace": "}",
-    "r brack": "}",
-    "r bracket": "}",
-    "right bracket": "}",
+    #s"r brack": "}",
+    #"r bracket": "}",
+    #"right bracket": "}",
     "angle": "<",
     "left angle": "<",
     "less than": "<",
     "rangle": ">",
-    "R angle": ">",
+    #"R angle": ">",
     "right angle": ">",
     "greater than": ">",
     "star": "*",
@@ -238,10 +239,10 @@ ctx.lists["self.arrow_key"] = {
 }
 
 simple_keys = [
-    "end",
+    #"end",
     "enter",
     "escape",
-    "home",
+    #"home",
     "insert",
     "pagedown",
     "pageup",
@@ -252,6 +253,7 @@ simple_keys = [
 alternate_keys = {
     "wipe": "backspace",
     "delete": "backspace",
+    "exit": "escape",
     #'junk': 'backspace',
     "forward delete": "delete",
     "page up": "pageup",
