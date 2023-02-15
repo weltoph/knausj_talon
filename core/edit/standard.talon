@@ -20,7 +20,3 @@ file save all: edit.save_all()
     user.insert_many(symbol_key_list)
     insert(" ")
 slap: edit.line_insert_down()
-shift slap:
-  edit.line_end()
-  insert(";")
-  edit.line_insert_down()

@@ -41,3 +41,14 @@ generic [type] {user.java_generic_data_structure}:
 op array: user.code_operator_subscript()
 
 op new: insert("new ")
+
+
+shift slap:
+  edit.line_end()
+  insert(";")
+  edit.line_insert_down()
+
+begin body:
+  edit.line_end()
+  insert(" {")
+  edit.line_insert_down()
