@@ -52,3 +52,7 @@ begin body:
   edit.line_end()
   insert(" {")
   edit.line_insert_down()
+
+for loop:
+  insert("for")
+  user.insert_between("(", ")")
