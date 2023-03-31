@@ -50,5 +50,9 @@ shift slap:
 
 begin body:
   edit.line_end()
-  user.insert_between(" {", "}")
-  key("enter")
+  insert(" {")
+  edit.line_insert_down()
+
+for loop:
+  insert("for")
+  user.insert_between("(", ")")
