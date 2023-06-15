@@ -41,6 +41,7 @@ generic [type] {user.java_generic_data_structure}:
 op array: user.code_operator_subscript()
 
 op new: insert("new ")
+op equals: insert(" = ")
 
 
 shift slap:
@@ -55,4 +56,4 @@ begin body:
 
 for loop:
   insert("for")
-  user.insert_between("(", ")")
+  user.insert_between("(", ") {")
