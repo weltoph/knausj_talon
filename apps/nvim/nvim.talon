@@ -1,6 +1,7 @@
-app:nvim-qt
--
+app: vim
+app: nvim-qt
+--
 paste {user.letter}:
-    key(")
-    key(letter)
-    key(p)
+  key('"')
+  key(letter)
+  key(p)
