@@ -1,4 +1,5 @@
 app: vim
+app: nvim-qt
 -
 insert first property with <user.interpretation_sequence>:
   insert(user.make_first(interpretation_sequence))

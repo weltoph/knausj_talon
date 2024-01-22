@@ -1,4 +1,5 @@
 app: vim
+app: nvim-qt
 --
 paste {user.letter}:
   key('"')
