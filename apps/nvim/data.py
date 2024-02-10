@@ -45,7 +45,7 @@ def make_first(m: List[List[str]]) -> str:
             r"\multirow{-1}{=}{NAME} & \multirow{-1}{*}{\footnotesize $INITIAL$} & \multirow{-1}{*}{\footnotesize $TRANSITION$} & \multirow{-1}{*}{\footnotesize $ALPHABET$} & \multirow{-1}{*}{\footnotesize TOPOLOGY} & \multirow{" + str(2*len(m)) + r"}{=}{\footnotesize DESCRIPTION} & \multirow{" + str(2*len(m)) + r"}{*}{\footnotesize $PROPERTYSIZE$} & \multirow{2}{*}{\footnotesize $" + ", ".join(map(lambda x: interpretations_map[x], m[0])) + r"$} & \footnotesize \texttt{learn} & \footnotesize $RESULT$ & \footnotesize $TIME$~(UNIT) & \footnotesize $(STATEMENTS/ABSTRACTION)$ & \footnotesize $USEDALPHABETSIZE$  & \footnotesize $INSTANCES$ \\")
     result.append(
             r"&&&&&&&& \footnotesize \texttt{adaptive} & \footnotesize $RESULT$ & \footnotesize $TIME$~(UNIT) & \footnotesize $(STATEMENTS/ABSTRACTION)$ & \footnotesize $USEDALPHABETSIZE$  & \footnotesize $(INSTANCES/GENERALIZATIONS)$ \\")
-    result[-1] += r"\cline{8-14}" if len(m) > 1 else r"\cline{6-14}"
+    result[-1] += r"\cline{8-14}"
     for i, e in enumerate(m[1:]):
         result.append(
                 r"&&&&&&& \multirow{2}{*}{\footnotesize $" + ", ".join(map(lambda x: interpretations_map[x], e)) + r"$} & \footnotesize \texttt{learn} & \footnotesize $RESULT$ & \footnotesize $TIME$~(UNIT) & \footnotesize $(STATEMENTS/ABSTRACTION)$ & \footnotesize $USEDALPHABETSIZE$  & \footnotesize $INSTANCES$ \\")
@@ -63,6 +63,7 @@ def make_not_first(m: List[List[str]]) -> str:
             r"&&&&& \multirow{" + str(2*len(m)) + r"}{=}{\footnotesize DESCRIPTION} & \multirow{" + str(2*len(m)) + r"}{*}{\footnotesize $PROPERTYSIZE$} & \multirow{2}{*}{\footnotesize $" + ", ".join(map(lambda x: interpretations_map[x], m[0])) + r"$} & \footnotesize \texttt{learn} & \footnotesize $RESULT$ & \footnotesize $TIME$~(UNIT) & \footnotesize $(STATEMENTS/ABSTRACTION)$ & \footnotesize $USEDALPHABETSIZE$  & \footnotesize $INSTANCES$ \\")
     result.append(
             r"&&&&&&&& \footnotesize \texttt{adaptive} & \footnotesize $RESULT$ & \footnotesize $TIME$~(UNIT) & \footnotesize $(STATEMENTS/ABSTRACTION)$ & \footnotesize $USEDALPHABETSIZE$  & \footnotesize $(INSTANCES/GENERALIZATIONS)$ \\")
+    result[-1] += r"\cline{8-14}"
     for i, e in enumerate(m[1:]):
         result.append(
                 r"&&&&&&& \multirow{2}{*}{\footnotesize $" + ", ".join(map(lambda x: interpretations_map[x], e)) + r"$} & \footnotesize \texttt{learn} & \footnotesize $RESULT$ & \footnotesize $TIME$~(UNIT) & \footnotesize $(STATEMENTS/ABSTRACTION)$ & \footnotesize $USEDALPHABETSIZE$  & \footnotesize $INSTANCES$ \\")

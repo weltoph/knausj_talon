@@ -24,3 +24,6 @@
 #before that: user.before_last_phrase()
 scratch that: user.clear_last_phrase()
 nope that was <user.formatters>: user.formatters_reformat_last(formatters)
+my first name: insert("Christoph")
+my last name: insert("Welzel")
+my complete last name: insert("Welzel-Mohr")
